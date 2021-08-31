@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>StopWatch</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+        width: 100vw;
+        height: 100vh;
+      }
+      .time {
+        font-size: 3rem;
+      }
+      .time-container {
+        width: 700px;
+        height: 300px;
+        background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);
+        border-radius: 5px;
+        box-shadow: 0 5px 15px black;
+      }
+      @media (max-width: 768px) {
+        .time-container {
+          width: 450px;
+          height: 250px;
+        }
+      }
+      @media (max-width: 476px) {
+        html {
+          font-size: 12px;
+        }
+        .time-container {
+          width: 350px;
+          height: 180px;
+        }
+      }
+      @media (max-width: 350px) {
+        html {
+          font-size: 10px;
+        }
+        .time-container {
+          width: 300px;
+          height: 150px;
+        }
+      }
+      @media (max-width: 280px) {
+        html {
+          font-size: 9px;
+        }
+        .time-container {
+          width: 260px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="
+        time-container
+        text-center
+        px-5
+        py-3
+        border border-1
+        d-inline-block
+        mt-5
+      "
+    >
+      <h1 class="my-3 text-warning">Stopwatch</h1>
+      <div class="time text-warning mb-3">
+        <span class="minute">00</span> : <span class="second">00</span> :
+        <span class="milisec">00</span>
+      </div>
+      <div id="buttons">
+        <button class="start btn btn-success mx-2 px-4">START</button>
+        <button class="stop btn btn-warning mx-2 px-4">STOP</button>
+        <button class="reset btn btn-danger mx-2 px-4">RESET</button>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
