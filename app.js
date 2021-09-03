@@ -21,6 +21,9 @@ resetBtn.addEventListener("click", function () {
     min = "00";
     sec = "00";
     mil = "00";
+    minuteVal = 00;
+    secondVal = 00;
+    milisecVal = 00;
     minute.innerHTML = min;
     second.innerHTML = sec;
     milisec.innerHTML = mil;
