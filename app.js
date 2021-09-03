@@ -10,7 +10,6 @@ let milisecVal = 00;
 let IntervalID;
 
 startBtn.addEventListener("click", function () {
-    clearInterval(IntervalID);
     IntervalID = setInterval(startTimer, 10);
 })
 stopBtn.addEventListener("click", function () {
@@ -18,12 +17,12 @@ stopBtn.addEventListener("click", function () {
 })
 resetBtn.addEventListener("click", function () {
     clearInterval(IntervalID);
-    min = "00";
-    sec = "00";
-    mil = "00";
     minuteVal = 00;
     secondVal = 00;
     milisecVal = 00;
+    min = "00";
+    sec = "00";
+    mil = "00";
     minute.innerHTML = min;
     second.innerHTML = sec;
     milisec.innerHTML = mil;
